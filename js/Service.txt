@@ -1,0 +1,184 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const services = [
+        {
+            id: 1,
+            image: './ServiceImages/NailPolish/NailPolish.jpg',
+            title: 'NAIL POLISH',
+            relatedImages: [
+                { image: './ServiceImages/NailPolish/CutFileNail.jpg', title: 'CutFileNail' },
+                { image: './ServiceImages/NailPolish/changeOfNailColor.jpg', title: 'Change Of NailColor' },
+                { image: './ServiceImages/NailPolish/FrenchPolishNail.jpg', title: 'FrenchPolishNail' },
+            ],
+        },
+        {
+            id: 2,
+            image: './ServiceImages/DetanBleach/DetanBleech.jpg',
+            title: 'Detan & Bleach',
+            relatedImages: [
+                { image: './ServiceImages/DetanBleach/Feet.jpg', title: 'Feet' },
+                { image: './ServiceImages/DetanBleach/UpperLip.jpg', title: 'UpperLip' },
+                { image: './ServiceImages/DetanBleach/backFacial.jpeg', title: 'backFacial' },
+                { image: './ServiceImages/DetanBleach/FaceAndNeck.jpg', title: 'FaceAndNeck' },
+                { image: './ServiceImages/DetanBleach/fullbody.jfif', title: 'fullbody' },
+                { image: './ServiceImages/DetanBleach/underarms.jpg', title: 'underarms' },
+            ],
+        },
+        {
+            id: 3,
+            image: './ServiceImages/ManicureAndPedicure/manicureandPedicure.jpg',
+            title: 'maincure & Pedicure',
+            relatedImages: [
+                { image: './ServiceImages/ManicureAndPedicure/cocoButter.jpg', title: 'CocoButter' },
+                { image: './ServiceImages/ManicureAndPedicure/coffeeCream.jpg', title: 'CoffeeCream' },
+                { image: './ServiceImages/ManicureAndPedicure/Organicspa.jfif', title: 'Organicspa' },
+            ],
+        },
+        {
+            id: 4,
+            image: './ServiceImages/PeelOff/PeelOff.webp',
+            title: 'PeelOff',
+            relatedImages: [
+                { image: './ServiceImages/PeelOff/chin.jfif', title: 'chin' },
+                { image: './ServiceImages/PeelOff/face.jfif', title: 'face' },
+                { image: './ServiceImages/PeelOff/fullbikini.jfif', title: 'fullbikini' },
+                { image: './ServiceImages/PeelOff/undetArms.jfif', title: 'undetArms' },
+                { image: './ServiceImages/PeelOff/upperlip.jfif', title: 'upperlip' },
+            ],
+        },
+        {
+            id: 5,
+            image: './ServiceImages/Reflexnology/hand.jfif',
+            title: 'Reflexnology',
+            relatedImages: [
+                { image: './ServiceImages/Reflexnology/feet.jpg', title: 'Feet' },
+                { image: './ServiceImages/Reflexnology/hand.jfif', title: 'Hand' },
+                { image: './ServiceImages/Reflexnology/neckAndShoulder.jpg', title: 'Neck & Shoulder' },
+            ],
+        },
+        {
+            id: 6,
+            image: './ServiceImages/SkinCare/Face.jpg',
+            title: 'SkinCare',
+            relatedImages: [
+                { image: './ServiceImages/SkinCare/Hand.jpg', title: 'Hand' },
+                { image: './ServiceImages/SkinCare/Face.jpg', title: 'Face' },
+                { image: './ServiceImages/SkinCare/Neck.jpg', title: 'Neck' },
+            ],
+        },
+        {
+            id: 7,
+            image: './ServiceImages/Threading/eyeBrow.avif',
+            title: 'Threading',
+            relatedImages: [
+                { image: './ServiceImages/Threading/eyeBrow.avif', title: 'EyeBrow' },
+                { image: './ServiceImages/Threading/threading.jfif', title: 'Threading' },
+                { image: './ServiceImages/Threading/upperLip.jfif', title: 'UpperLip' },
+            ],
+        },
+        {
+            id: 8,
+            image: './ServiceImages/Waxing/Leg.webp',
+            title: 'Waxing',
+            relatedImages: [
+                { image: './ServiceImages/Waxing/Body.webp', title: 'Body' },
+                { image: './ServiceImages/Waxing/Leg.webp', title: 'Leg' },
+                
+            ],
+        },
+        {
+            id: 9,
+            image: './ServiceImages/TextureMatter/hairGrowth.jpg',
+            title: 'TextureMatter',
+            relatedImages: [
+                { image: './ServiceImages/TextureMatter/hairGrowth.jpg', title: 'hairGrowth' },
+                { image: './ServiceImages/TextureMatter/hairStright.jpg', title: 'hairStright' },
+                { image: './ServiceImages/TextureMatter/Perming.jpg', title: 'Perming' },
+            ],
+        },
+        {
+            id: 10,
+            image: './ServiceImages/HairStyling/CurlyHair.jpg',
+            title: 'Hair Styling',
+            relatedImages: [
+                { image: './ServiceImages/HairStyling/CurlyHair.jpg', title: 'CurlyHair' },
+                { image: './ServiceImages/HairStyling/FringeCut.jpg', title: 'FringeCut' },
+                { image: './ServiceImages/HairStyling/layerCut.jpg', title: 'Layer' },
+            ],
+        },
+        {
+            id: 11,
+            image: './ServiceImages/HairTreatement/HairTreatment.avif',
+            title: 'Hair Treatment',
+            relatedImages: [
+                { image: './ServiceImages/HairTreatement/HairTreatment.avif', title: 'HairTreatment' },
+                { image: './ServiceImages/HairTreatement/head.avif', title: 'Head Massage' },
+                { image: './ServiceImages/HairTreatement/color.avif', title: 'Color Save' },
+                { image: './ServiceImages/HairTreatement/frizz.avif', title: 'Frizz Ease' },
+                { image: './ServiceImages/HairTreatement/dandroff.avif', title: 'Dandruff Control' },
+            ],
+        },
+    ];
+
+
+    const servicesGrid = document.getElementById('servicesGrid');
+    const relatedImagesGrid = document.getElementById('relatedImagesGrid');
+
+    // Function to display the services in the grid
+    function displayServices() {
+        servicesGrid.innerHTML = ''; // Clear the grid
+        services.forEach(service => {
+            const card = document.createElement('div');
+            card.className = 'col-lg-3 col-md-4 col-sm-6 mb-4';
+
+            card.innerHTML = `
+                <div class="card h-100 card-hover-animation" style="cursor: pointer;">
+                    <img src="${service.image}" class="card-img-top img-fluid service-img" alt="${service.title}">
+                    <div class="card-body">
+                        <h5 class="card-title text-center text">${service.title}</h5>
+                    </div>
+                </div>
+            `;
+
+            // Add event listeners for hover
+            card.addEventListener('mouseenter', () => handleHover(service.id));
+            card.addEventListener('mouseleave', clearRelatedImages);
+
+            servicesGrid.appendChild(card);
+        });
+    }
+
+    // Function to handle hover and show related images
+    function handleHover(serviceId) {
+        const selectedService = services.find(service => service.id === serviceId);
+        displayRelatedImages(selectedService);
+    }
+
+    // Function to display related images of a selected service
+    function displayRelatedImages(service) {
+        relatedImagesGrid.innerHTML = ''; // Clear related images grid
+
+        service.relatedImages.forEach(relatedImage => {
+            const card = document.createElement('div');
+            card.className = 'col-lg-4 col-md-6 mb-4';
+
+            card.innerHTML = `
+                <div class="card h-100 related-card">
+                    <img src="${relatedImage.image}" class="card-img-top img-fluid service-img" alt="${relatedImage.title}">
+                    <div class="card-body">
+                        <h5 class="card-title text-center text">${relatedImage.title}</h5>
+                    </div>
+                </div>
+            `;
+
+            relatedImagesGrid.appendChild(card);
+        });
+    }
+
+    // Function to clear related images when mouse leaves the service card
+    function clearRelatedImages() {
+        relatedImagesGrid.innerHTML = ''; // Clear the related images grid
+    }
+
+    // Initialize the services grid
+    displayServices();
+});

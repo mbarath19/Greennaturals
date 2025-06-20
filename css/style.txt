@@ -1,0 +1,113 @@
+/* Ensure all main images are the same size */
+.main-image {
+    width: 90%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    cursor: pointer;
+    margin: 0 auto; /* Center-aligns the image */
+    border-radius: 8px;
+    display: block; /* Ensures the margin auto works */
+}
+
+/* Style for related images container to display 4 images per row */
+.related-images {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+    gap: 10px;
+    margin-top: 10px;
+    width: 90%; /* Match the width of the main image */
+    margin: 0 auto; /* Center-aligns the container */
+}
+
+/* Style for each related image */
+.related-images img {
+    flex: 1 0 22%; /* Adjust flex basis to ensure 4 items per row with some margin */
+    height: 100px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    cursor: pointer;
+    border-radius: 8px; /* Optional: Adds rounded corners to images */
+}
+
+
+
+
+
+
+
+
+
+
+
+// Define the services array
+const services = [
+    {
+        id: 1,
+        image: './ServiceImages/NailPolish/NailPolish.jpg',
+        title: 'NAIL POLISH',
+        relatedImages: [
+            { image: './ServiceImages/NailPolish/CutFileNail.jpg', title: 'CutFileNail' },
+            { image: './ServiceImages/NailPolish/changeOfNailColor.jpg', title: 'Change Of NailColor' },
+            { image: './ServiceImages/NailPolish/FrenchPolishNail.jpg', title: 'FrenchPolishNail' },
+            
+        ],
+    },
+    {
+        id: 2,
+        image: './ServiceImages/DetanBleach/DetanBleech.jpg',
+        title: 'Detan & Bleach',
+        relatedImages: [
+            { image: './ServiceImages/DetanBleach/Feet.jpg', title: 'Feet' },
+            { image: './ServiceImages/DetanBleach/UpperLip.jpg', title: 'UpperLip' },
+            { image: './ServiceImages/DetanBleach/backFacial.jpeg', title: 'BackFacial' },
+            { image: './ServiceImages/DetanBleach/FaceAndNeck.jpg', title: 'FaceAndNeck' },
+            { image: './ServiceImages/DetanBleach/fullbody.jfif', title: 'FullBody' },
+            { image: './ServiceImages/DetanBleach/underarms.jpg', title: 'Underarms' },
+        ],
+    },
+    // Add more services as needed
+];
+
+// Get the services container
+const servicesContainer = document.getElementById('services-container');
+
+// Function to generate the HTML for the services
+// Function to generate the HTML for the services
+function generateServices() {
+    services.forEach(service => {
+        // Create the service item element
+        const serviceElement = document.createElement('div');
+        serviceElement.classList.add('col-md-4', 'service-item');
+        serviceElement.setAttribute('onclick', `toggleRelatedImages(${service.id})`); // Fix template literal syntax
+
+        // Generate the HTML content for each service
+        serviceElement.innerHTML = `
+            <img src="${service.image}" class="img-fluid main-image" alt="${service.title}">
+            <h3 class="text-center">${service.title}</h3>
+            <div id="related-images-${service.id}" class="related-images d-none">
+                ${service.relatedImages.map(relatedImage => `
+                    <img src="${relatedImage.image}" class="img-thumbnail" alt="${relatedImage.title}">
+                `).join('')}
+            </div>
+        `;
+
+        // Append the service element to the container
+        servicesContainer.appendChild(serviceElement);
+    });
+}
+
+// Function to toggle related images
+function toggleRelatedImages(serviceId) {
+    // Hide all related images sections
+    document.querySelectorAll('.related-images').forEach(function (element) {
+        element.classList.add('d-none');
+    });
+
+    // Show the clicked service's related images
+    const relatedImages = document.getElementById(`related-images-${serviceId}`); // Fix template literal syntax
+    if (relatedImages) {
+        relatedImages.classList.toggle('d-none');
+    }
+}
+
+// Call the function to generate the services
+generateServices();

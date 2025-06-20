@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Green Naturals</title>
+    <link rel="icon" href="./img/green3.png" type="image/png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .whatsapp-link {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    
+        .whatsapp-link:hover {
+            background-color: #1EBEA5;
+            text-decoration: none;
+            color: white;
+        }
+    
+        .whatsapp-icon {
+            font-size: 30px;
+        }
+    
+        @media (max-width: 575px) {
+            .whatsapp-link {
+                bottom: 15px;
+                left: 15px;
+                padding: 10px;
+            }
+    
+            .whatsapp-icon {
+                font-size: 25px;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar start -->
+    <div id="navbar-container" style="margin-top: -25px;"></div>
+    <!-- Navbar End -->
+
+    <!-- WhatsApp Icon -->
+    <!-- <a href="https://wa.me/9600399287" target="_blank" class="whatsapp-link">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a> -->
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumbs py-5">
+        <div class="container text-center py-5">
+            <h3 class="text-white display-3 mb-4">Our testimonial</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-white">testimonial</li>
+                </ol>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial py-5" style="background: var(--bs-secondary);">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                <p class="fs-4 text-uppercase text-primary">Testimonial</p>
+                <h1 class="display-4 mb-4 text-white">What Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item rounded p-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="d-flex flex-column mx-auto">
+                                <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
+                                    <img src="img/review1.jpg" class="img-fluid rounded-circle" alt="">
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="mb-2 text-primary">Jessica R</h4>
+                                    <!-- <p class="m-0 text-white">Profession</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="position-absolute" style="top: 20px; right: 25px;">
+                                <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="d-flex mb-4">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="fs-5 mb-0 text-white">Green Natural Saloons exceeded my expectations! The organic products left my hair feeling soft and healthy. The staff was incredibly professional, and the serene atmosphere made it a relaxing experience. I love that they prioritize eco-friendly practices, and I’ll definitely be coming back!.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded p-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="d-flex flex-column mx-auto">
+                                <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
+                                    <img src="img/review2.jpg" class="img-fluid rounded-circle" alt="">
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="mb-2 text-primary">David P</h4>
+                                    <!-- <p class="m-0 text-white">Profession</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="position-absolute" style="top: 20px; right: 25px;">
+                                <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="d-flex mb-4">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="fs-5 mb-0 text-white">I had an amazing experience at Green Natural Saloons. From the moment I walked in, the staff was friendly and attentive. The natural products used during my haircut left my scalp feeling refreshed, and I appreciate their sustainable approach to beauty. Highly recommended for anyone looking for a green alternative!.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded p-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="d-flex flex-column mx-auto">
+                                <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
+                                    <img src="img/review3.jpg" class="img-fluid rounded-circle" alt="">
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="mb-2 text-primary">Sophia M</h4>
+                                    <!-- <p class="m-0 text-white">Profession</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="position-absolute" style="top: 20px; right: 25px;">
+                                <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="d-flex mb-4">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="fs-5 mb-0 text-white">I’ve been to several salons, but Green Natural Saloons is by far the best. The all-natural products they use made a huge difference to my skin, and I felt completely pampered. The stylist understood exactly what I wanted, and the eco-conscious environment just added to the overall experience!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+
+    <!-- Footer & Copyright End -->
+    <div id="footer-container"></div>
+    <!-- Footer & Copyright End -->
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Sanjai Script -->
+    <script src="js/footer.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Green Naturals</title>
+    <link rel="icon" href="./img/green3.png" type="image/png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Custom CSS */
+        .hero-section {
+            background: url('https://t4.ftcdn.net/jpg/06/25/98/09/240_F_625980969_bNfKYr9lWCP0IvJ8AJKiyeRZQ8cuhVrm.jpg') center/cover no-repeat;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .blog-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .about-section {
+            background: #f7f7f7;
+            padding: 60px 0;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+        }
+
+        .testimonial {
+            background: #343a40;
+            color: white;
+            padding: 50px 0;
+        }
+
+        .testimonial h2 {
+            color: #ffd700;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        .category-card {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .category-card img {
+            transition: transform 0.3s;
+        }
+
+        .category-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+
+        .additional-content {
+            display: none;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+    .whatsapp-link {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 1000;
+        background-color: #25D366;
+        color: white;
+        border-radius: 50%;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .whatsapp-link:hover {
+        background-color: #1EBEA5;
+        text-decoration: none;
+        color: white;
+    }
+
+    .whatsapp-icon {
+        font-size: 30px;
+    }
+
+    @media (max-width: 575px) {
+        .whatsapp-link {
+            bottom: 15px;
+            left: 15px;
+            padding: 10px;
+        }
+
+        .whatsapp-icon {
+            font-size: 25px;
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar start -->
+    <div id="navbar-container" style="margin-top: -25px;"></div>
+    <!-- Navbar End -->
+
+
+    <!-- WhatsApp Icon -->
+    <!-- <a href="https://wa.me/9600399287" target="_blank" class="whatsapp-link">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a> -->
+
+    
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <h1>Discover Hair & Beauty Trends</h1>
+        <p>Find the latest in hair care, skincare, and beauty tips curated by professionals.</p>
+        <a href="service.html" class="btn btn-outline-light btn-lg">Explore Now</a>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://images.pexels.com/photos/4321436/pexels-photo-4321436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        class="img-fluid rounded" alt="Salon Image">
+                </div>
+                <div class="col-md-6">
+                    <h2>About Our Salon</h2>
+                    <p>Welcome to our premium salon blog, where we bring you expert advice, tips, and trends in hair
+                        styling, skincare, makeup, and more. Our team of professionals is dedicated to helping you look
+                        and feel your best. Whether you're seeking a new look or skincare routine, we've got you covered
+                        with the latest trends and expert insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories Section -->
+    <section class="container my-5">
+        <div class="text-center">
+            <h2 class="blog-title">Explore Our Blog Categories</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1661288528400-212e4f7c23f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVucyUyMGhhaXJjdXR8ZW58MHx8MHx8fDA%3D"
+                        class="card-img-top" alt="Hair Care Category">
+                    <div class="card-body">
+                        <h5 class="card-title">Hair Care</h5>
+                        <p class="card-text">Get expert tips on how to care for your hair, from treatments to products.</p>
+                        <a href="#" class="btn btn-outline-dark read-more">Read More</a>
+                        <div class="additional-content">
+                            <p>Learn about the best haircare products and treatments available. We provide comprehensive reviews and advice to keep your hair healthy and beautiful.</p>
+                            <p>Discover techniques to maintain your hair's natural shine and strength. Our experts share tips on preventing damage and keeping your locks looking great.</p>
+                            <p>Explore seasonal haircare tips to adapt your routine for different weather conditions, ensuring your hair remains in top condition all year round.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="https://images.pexels.com/photos/8387380/pexels-photo-8387380.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        class="card-img-top" alt="Beauty Tips">
+                    <div class="card-body">
+                        <h5 class="card-title">Beauty Tips</h5>
+                        <p class="card-text">Stay updated with the latest beauty trends and product recommendations.</p>
+                        <a href="#" class="btn btn-outline-dark read-more">Read More</a>
+                        <div class="additional-content">
+                            <p>Get the scoop on the latest beauty products and how to use them effectively. We review new releases and provide honest recommendations.</p>
+                            <p>Follow our beauty tips for achieving a flawless look, including makeup techniques and skincare routines that work for all skin types.</p>
+                            <p>Find out how to choose products that suit your individual needs, helping you to achieve and maintain a stunning appearance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="https://i.pinimg.com/736x/2e/c2/cb/2ec2cb55714493ca8047752f7f0ef853.jpg"
+                        class="card-img-top" alt="Makeup Trends">
+                    <div class="card-body">
+                        <h5 class="card-title">Makeup Trends</h5>
+                        <p class="card-text">Discover the hottest makeup looks and how to achieve them.</p>
+                        <a href="#" class="btn btn-outline-dark read-more">Read More</a>
+                        <div class="additional-content">
+                            <p>Explore the latest makeup trends and techniques that are making waves in the beauty industry. Our experts break down the hottest looks for you to try.</p>
+                            <p>Learn about new makeup products and how they can enhance your beauty routine. We provide in-depth reviews and application tips for each product.</p>
+                            <p>Get inspired by celebrity makeup looks and find out how to recreate them at home with step-by-step guides and product recommendations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials Section -->
+    <section class="testimonial text-center">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div>
+                        <p>"The best salon experience I've ever had. The staff are professional, and the results are outstanding."</p>
+                        <p><strong>Jane Doe</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div>
+                        <p>"Absolutely love the service here. They really know how to make you feel pampered and special."</p>
+                        <p><strong>John Smith</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div >
+                        <p>"From the moment I walked in, I felt like I was in good hands. Highly recommend for anyone looking for top-notch beauty treatments."</p>
+                        <p><strong>Emily Johnson</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Blog Posts Section -->
+     <section class="container my-5">
+        <div class="text-center">
+            <h2 class="blog-title">Latest Blog Posts</h2>
+        </div>
+
+        <div class="row g-4">
+            <!-- Post 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        class="card-img-top" alt="Blog Post Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Top Haircare Tips for Summer</h5>
+                        <p class="card-text">Learn how to keep your hair healthy and vibrant all summer long.</p>
+                        <!-- <a href="#" class="btn btn-outline-dark">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/3993448/pexels-photo-3993448.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        class="card-img-top" alt="Blog Post Image">
+                    <div class="card-body">
+                        <h5 class="card-title">5 Skincare Myths You Should Stop Believing</h5>
+                        <p class="card-text">Debunk common skincare myths with expert insights.</p>
+                        <!-- <a href="#" class="btn btn-outline-dark">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/3993447/pexels-photo-3993447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        class="card-img-top" alt="Blog Post Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Current Makeup Trends for 2024</h5>
+                        <p class="card-text">Check out the latest and hottest makeup trends for this year.</p>
+                        <!-- <a href="#" class="btn btn-outline-dark">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Footer & Copyright End -->
+<div id="footer-container"></div>
+<!-- Footer & Copyright End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+        <!-- Sanjai Script -->
+        <script src="js/footer.js"></script>
+        <script src="js/nav.js"></script>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var readMoreButtons = document.querySelectorAll('.read-more');
+
+            readMoreButtons.forEach(function (button) {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var cardBody = this.closest('.card-body');
+                    var additionalContent = cardBody.querySelector('.additional-content');
+
+                    if (additionalContent.style.display === 'none' || additionalContent.style.display === '') {
+                        additionalContent.style.display = 'block';
+                        this.textContent = 'Read Less';
+                    } else {
+                        additionalContent.style.display = 'none';
+                        this.textContent = 'Read More';
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

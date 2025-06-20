@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>"Green Naturals - Beauty & Wellness for Radiant You"</title>
+    <link rel="icon" href="./img/green3.png" type="image/png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Beauty Salon, Organic Beauty, Hair Products, Spa Salon" name="keywords">
+    <meta content="Nail Polish, Detan & Bleach, Manicure & Pedicure, Peeloff, Skincare, Threading, Waxing, Hair styling, Hair Treatment, Head Massage, Hair Colour, Tattoo, Kids Hair Cut" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <style>
+        .opening-hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.opening-hours-table td {
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.opening-hours-table td:first-child {
+    font-weight: bold;
+    /* Add right padding to the day column for a gap between day and time */
+    padding-right: 40px; /* Adjust this value for desired gap */
+}
+        .team-item {
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .team-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .team-img img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            /* Ensures images cover the space evenly */
+            border-radius: 10px 10px 0 0;
+            /* Rounded corners for the top */
+        }
+
+        .team-text {
+            padding: 15px;
+            background-color: #333;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .team-text h3,
+        .team-text p {
+            margin: 0;
+            color: white;
+        }
+
+        @media (min-width: 576px) {
+            .team-img img {
+                height: 300px;
+                /* Set height for larger screens */
+            }
+        }
+
+        @media (max-width: 575px) {
+            .team-img img {
+                height: 300px;
+                /* Set a slightly smaller height for mobile */
+            }
+        }
+
+
+
+        .whatsapp-link {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .whatsapp-link:hover {
+            background-color: #1EBEA5;
+            text-decoration: none;
+            color: white;
+        }
+
+        .whatsapp-icon {
+            font-size: 30px;
+        }
+
+        @media (max-width: 575px) {
+            .whatsapp-link {
+                bottom: 15px;
+                left: 15px;
+                padding: 10px;
+            }
+
+            .whatsapp-icon {
+                font-size: 25px;
+            }
+        }
+    </style>
+
+
+
+    <style>
+        .service-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .related-images-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .related-images-item {
+            width: 120px;
+            /* Set fixed width */
+            margin: 10px;
+            text-align: center;
+        }
+
+        .related-images-item img {
+            width: 100%;
+            height: 120px;
+            /* Set fixed height */
+            object-fit: cover;
+            /* Ensures images cover the area without distortion */
+            border-radius: 8px;
+            /* Adds a slight rounding to the corners */
+        }
+
+        .related-images-item h6 {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 576px) {
+            .related-images-item {
+                width: 45%;
+                /* Make images take up more space on smaller screens */
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                padding: 10px;
+                text-align: left;
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar start -->
+    <div id="navbar-container" style="margin-top: -25px;">
+
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- WhatsApp Icon -->
+    <!-- <a href="https://wa.me/9600399287" target="_blank" class="whatsapp-link">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a> -->
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+
+
+    <!-- Video Header Start -->
+<div class="container-fluid video-header px-0">
+    <div class="video-wrapper position-relative">
+        <!-- Video Background -->
+        <video autoplay muted loop class="w-100" style="object-fit: cover; height: 100vh;">
+            <source src="video/video-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Overlay Content -->
+        <div class="video-caption position-absolute top-50 start-50 translate-middle text-center">
+            <div class="p-3" style="max-width: 900px;  border-radius: 15px;">
+                <h1 class="display-1 text-capitalize mb-3"
+                    style="color: #ff66b2; font-size: 50px;">Spa & Beauty Center</h1>
+                <p class="mx-md-5 fs-4 px-1 mb-5 text-white">
+                    Where beauty blossoms and confidence shines
+                </p>
+                <div class="flex-column align-items-center justify-content-center">
+                    <a class="btn btn-light rounded-pill py-2 px-4 mb-1  " href="service.html">
+                        Get Start
+                    </a>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="appointment.html">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Video Header End -->
+
+    <!-- Carousel End -->
+
+
+
+    <!-- Main services grid -->
+    <div class="container my-4">
+        <h2 style="text-align: center; color: #ff61a7; margin-bottom: 20px;">Our Services</h2>
+
+        <!-- Buttons for Men and Women Services -->
+        <div class="d-flex justify-content-center mb-4">
+            <button id="menServicesBtn" class="btn btn-primary mx-2">Men</button>
+            <button id="womenServicesBtn" class="btn btn-secondary mx-2">Women</button>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="row" id="services-gallery"></div>
+    </div>
+
+    <!-- Modal for related images -->
+    <div class="modal fade" id="relatedImagesModal" tabindex="-1" aria-labelledby="relatedImagesModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="relatedImagesModalLabel">Related Services</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="related-images-container"
+                        class="related-images-container d-flex flex-wrap justify-content-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Appointment Start -->
+    <div class="container-fluid appointment py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-start">
+                <div class="col-lg-6 col-12">
+                    <div class="appointment-form p-5">
+                        <p class="fs-4 text-uppercase text-primary">Get In Touch</p>
+                        <h1 class="display-5 mb-4 text-white">Get Appointment</h1>
+                        <form>
+                            <div class="row gy-3 gx-4">
+                                <div class="col-lg-6 col-12">
+                                    <input type="text" class="form-control py-3 border-white bg-transparent text-white"
+                                        placeholder="First Name">
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <input type="email" class="form-control py-3 border-white bg-transparent text-white"
+                                        placeholder="Email">
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <select class="form-select py-3 border-white bg-transparent"
+                                        aria-label="Default select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <input type="date" class="form-control py-3 border-white bg-transparent">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-white bg-transparent text-white" name="text"
+                                        id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="button"
+                                        class="btn btn-primary btn-primary-outline-0 w-100 py-3">SUBMIT NOW</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 openhours">
+                    <div>
+                        <h1 class="display-5 mb-4 text-center" style="color: #ff4f9d;">Opening Hours</h1>
+                        <!-- Opening Hours Table -->
+                        <table class="opening-hours-table">
+                            <tbody>
+                                <tr>
+                                    <td>Sun</td>
+                                    <td>08:00 am – 08:00 pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Mon</td>
+                                    <td>08:00 am – 08:00 pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Tues</td>
+                                    <td>08:00 am – 08:00 pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Wed</td>
+                                    <td>08:00 am – 08:00 pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Thurs</td>
+                                    <td>08:00 am – 08:00 pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Fri</td>
+                                    <td>08:00 am – 08:00 pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Sat</td>
+                                    <td>08:00 am – 08:00 pm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="text-white mt-4">Check out seasonal discounts for best offers.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Appointment End -->
+
+    <!-- Counter Start -->
+    <div class="container-fluid counter-section"
+        style="background-image: url('img/counterbg.jpg'); background-size: cover; background-position: center;">
+        <div class="container py-5">
+            <div class="row g-5 justify-content-center">
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="counter-item p-5">
+                        <div class="counter-content bg-white p-4">
+                            <i class="fas fa-globe fa-5x text-primary mb-3"></i>
+                            <h5 class="text-primary">Worldwide Clients</h5>
+                            <div class="svg-img">
+                                <svg width="100" height="50">
+                                    <polygon points="55, 10 85, 55 25, 55 25," style="fill: #DCCAF2;" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="counter-quantity">
+                            <span class="text-white fs-2 fw-bold" data-toggle="counter-up">379</span>
+                            <span class="h1 fw-bold text-white">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="counter-item p-5">
+                        <div class="counter-content bg-white p-4">
+                            <i class="fas fa-spa fa-5x text-primary mb-3"></i>
+                            <h5 class="text-primary">Wellness & Spa</h5>
+                            <div class="svg-img">
+                                <svg width="100" height="50">
+                                    <polygon points="55, 10 85, 55 25, 55 25," style="fill: #DCCAF2;" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="counter-quantity">
+                            <span class="text-white fs-2 fw-bold" data-toggle="counter-up">829</span>
+                            <span class="h1 fw-bold text-white">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="counter-item p-5">
+                        <div class="counter-content bg-white p-4">
+                            <i class="fas fa-users fa-5x text-primary mb-3"></i>
+                            <h5 class="text-primary">Happy Customers</h5>
+                            <div class="svg-img">
+                                <svg width="100" height="50">
+                                    <polygon points="55, 10 85, 55 25, 55 25," style="fill: #DCCAF2;" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="counter-quantity">
+                            <span class="text-white fs-2 fw-bold" data-toggle="counter-up">2000</span>
+                            <span class="h1 fw-bold text-white">+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Counter End -->
+
+
+
+    <!-- Pricing Start -->
+    <!-- <div class="container-fluid pricing py-5">
+        <div class="container py-5">
+            <div class="owl-carousel pricing-carousel">
+                <div class="pricing-item">
+                    <div class="rounded pricing-content">
+                        <div
+                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                            <h1 class="display-4 mb-0">
+                                <small class="align-top text-muted"
+                                    style="font-size: 22px; line-height: 45px;">$</small>49<small class="text-muted"
+                                    style="font-size: 16px; line-height: 40px;">/Mo</small>
+                            </h1>
+                            <h5 class="text-primary text-uppercase m-0">Basic Plan</h5>
+                        </div>
+                        <div class="p-4">
+                            <p><i class="fa fa-check text-primary me-2"></i>Full Body Massage</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Deep Tissue Massage</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Hot Stone Massage</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Tissue Body Polish</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Foot & Nail Care</p>
+                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-item">
+                    <div class="pricing-content rounded">
+                        <div
+                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                            <h1 class="display-4 mb-0">
+                                <small class="align-top text-muted"
+                                    style="font-size: 22px; line-height: 45px;">$</small>99<small class="text-muted"
+                                    style="font-size: 16px; line-height: 40px;">/Mo</small>
+                            </h1>
+                            <h5 class="text-primary text-uppercase m-0">Family Plan</h5>
+                        </div>
+                        <div class="p-4">
+                            <p><i class="fa fa-check text-primary me-2"></i>Full Body Massage</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Deep Tissue Massage</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Hot Stone Massage</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Tissue Body Polish</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Foot & Nail Care</p>
+                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-item">
+                    <div class="pricing-content rounded">
+                        <div
+                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                            <h1 class="display-4 mb-0">
+                                <small class="align-top text-muted"
+                                    style="font-size: 22px; line-height: 45px;">$</small>149<small class="text-muted"
+                                    style="font-size: 16px; line-height: 40px;">/Mo</small>
+                            </h1>
+                            <h5 class="text-primary text-uppercase m-0">VIP Plan</h5>
+                        </div>
+                        <div class="p-4">
+                            <p><i class="fa fa-check text-primary me-2"></i>Full Body Massage</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Deep Tissue Massage</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Hot Stone Massage</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Tissue Body Polish</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Foot & Nail Care</p>
+                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-item">
+                    <div class="pricing-content rounded">
+                        <div
+                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                            <h1 class="display-4 mb-0">
+                                <small class="align-top text-muted"
+                                    style="font-size: 22px; line-height: 45px;">$</small>199<small class="text-muted"
+                                    style="font-size: 16px; line-height: 40px;">/Mo</small>
+                            </h1>
+                            <h5 class="text-primary text-uppercase m-0">Most Plan</h5>
+                        </div>
+                        <div class="p-4">
+                            <p><i class="fa fa-check text-primary me-2"></i>Full Body Massage</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Deep Tissue Massage</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Hot Stone Massage</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Tissue Body Polish</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Foot & Nail Care</p>
+                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Pricing End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid about py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <div class="video">
+                        <img src="img/about-1.jpg" class="img-fluid rounded" alt="Salon Interior">
+                        <div class="position-absolute rounded border-5 border-top border-start border-white"
+                            style="bottom: 0; right: 0;">
+                            <img src="img/about-2.jpg" class="img-fluid rounded" alt="Salon Team">
+                        </div>
+                        <button type="button" class="btn btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/your-video-id" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div>
+                        <p class="fs-4 text-uppercase text-primary">About Us</p>
+                        <h1 class="display-4 mb-4">Your Premier Beauty & Hair Salon</h1>
+                        <p class="mb-4">Welcome to our salon, where beauty meets excellence. We are dedicated to
+                            offering the highest quality hair and beauty services in a luxurious and relaxing
+                            environment. Our team of experienced professionals is passionate about helping you look and
+                            feel your best.</p>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-cut fa-3x text-primary"></i>
+                                    <div class="ms-4">
+                                        <h5 class="mb-2">Expert Hair Styling</h5>
+                                        <p class="mb-0">Our talented stylists are skilled in the latest hair trends and
+                                            techniques, ensuring you receive a personalized and stylish look every time.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-spa fa-3x text-primary"></i>
+                                    <div class="ms-4">
+                                        <h5 class="mb-2">Luxurious Spa Treatments</h5>
+                                        <p class="mb-0">Indulge in our premium spa services designed to rejuvenate and
+                                            pamper you. From facials to massages, we offer a range of treatments for
+                                            ultimate relaxation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="my-4">At our salon, we believe in providing exceptional service with a touch of
+                            elegance. Whether you're here for a haircut, color treatment, or a day of relaxation, we are
+                            committed to making your experience memorable.</p>
+                        <p class="mb-4">We use only the finest products and techniques to ensure you receive top-notch
+                            service. Our mission is to enhance your natural beauty and boost your confidence with every
+                            visit.</p>
+                    </div>
+                    <a href="service.html" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Discover
+                        Our Services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- team -->
+    <div class="container-fluid team py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                <p class="fs-4 text-uppercase text-primary">Spa Specialist</p>
+                <h1 class="display-4 mb-4">Spa & Beauty Specialist</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team32.jpeg" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-text text-center p-3">
+                            <h3>Vinitha</h3>
+                            <p>Mackup Artist & Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team31.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-text text-center p-3">
+                            <h3>Muthu Lakshmi</h3>
+                            <p>Beautician Expert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team34.jpeg" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-text text-center p-3">
+                            <h3>Shobana</h3>
+                            <p>Beautician Expert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team33.jpeg" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-text text-center p-3">
+                            <h3>Afjal & Ayan</h3>
+                            <p>Hair Stylist Expert</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team34.jpeg" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-text text-center p-3">
+                            <h3>Vidhya</h3>
+                            <p>Junior Beautician</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- teamEnd -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                <p class="fs-4 text-uppercase text-primary">Testimonial</p>
+                <h1 class="display-4 mb-4 text-white">What Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item rounded p-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="d-flex flex-column mx-auto">
+                                <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
+                                    <img src="img/review1.jpg" class="img-fluid rounded-circle" alt="">
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="mb-2 text-primary">Jessica R</h4>
+                                    <!-- <p class="m-0 text-white">Profession</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="position-absolute" style="top: 20px; right: 25px;">
+                                <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="d-flex mb-4">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="fs-5 mb-0 text-white">Green Natural Saloons exceeded my expectations! The
+                                    organic products left my hair feeling soft and healthy. The staff was incredibly
+                                    professional, and the serene atmosphere made it a relaxing experience. I love that
+                                    they prioritize eco-friendly practices, and I’ll definitely be coming back!.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded p-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="d-flex flex-column mx-auto">
+                                <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
+                                    <img src="img/review2.jpg" class="img-fluid rounded-circle" alt="">
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="mb-2 text-primary">David P</h4>
+                                    <!-- <p class="m-0 text-white">Profession</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="position-absolute" style="top: 20px; right: 25px;">
+                                <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="d-flex mb-4">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="fs-5 mb-0 text-white">I had an amazing experience at Green Natural Saloons.
+                                    From the moment I walked in, the staff was friendly and attentive. The natural
+                                    products used during my haircut left my scalp feeling refreshed, and I appreciate
+                                    their sustainable approach to beauty. Highly recommended for anyone looking for a
+                                    green alternative!.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded p-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="d-flex flex-column mx-auto">
+                                <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
+                                    <img src="img/review3.jpg" class="img-fluid rounded-circle" alt="">
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="mb-2 text-primary">Sophia M</h4>
+                                    <!-- <p class="m-0 text-white">Profession</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="position-absolute" style="top: 20px; right: 25px;">
+                                <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="d-flex mb-4">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="fs-5 mb-0 text-white">I’ve been to several salons, but Green Natural Saloons
+                                    is by far the best. The all-natural products they use made a huge difference to my
+                                    skin, and I felt completely pampered. The stylist understood exactly what I wanted,
+                                    and the eco-conscious environment just added to the overall experience!.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-12">
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded"
+                                style=" height:150px;">
+                                <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                <div>
+                                    <h4>Address</h4>
+                                    <p class="mb-0">
+                                        31, Rajendra Singh Street, Chunambupet, Gudiyatham, Tamil Nadu 632602</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded"
+                                style=" height:150px;">
+                                <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                                <div>
+                                    <h4>Mail Us</h4>
+                                    <p class="mb-0">greennaturals023@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded"
+                                style=" height:150px;">
+                                <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                <div>
+                                    <h4>Telephone</h4>
+                                    <p class="mb-0">+91 81483 18335</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="map-container rounded">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4519250659123!2d78.86513207380975!3d12.942908115509267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad6d3120df6a63%3A0x3b557b37e840b2da!2sGreen%20Naturals!5e0!3m2!1sen!2sin!4v1726557104465!5m2!1sen!2sin"
+                            frameborder="0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="text-center p-4 rounded-bottom bg-primary">
+                        <h4 class="text-white fw-bold">Follow Us</h4>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="https://www.facebook.com/profile.php?id=61566348382697"
+                                class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/GreenNatur94232"
+                                class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/greennaturals.gym?igsh=MTJ6ZHlvNTBoeDJldg=="
+                                class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+
+    <!-- Footer & Copyright End -->
+    <div id="footer-container"></div>
+    <!-- Footer & Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Sanjai Script -->
+
+    <script src="js/nav.js"></script>
+    <script src="js/service.js"></script>
+
+    <script src="js/footer.js"></script>
+</body>
+
+</html>

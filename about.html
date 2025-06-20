@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Green Naturals</title>
+    <link rel="icon" href="./img/green3.png" type="image/png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .whatsapp-link {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    
+        .whatsapp-link:hover {
+            background-color: #1EBEA5;
+            text-decoration: none;
+            color: white;
+        }
+    
+        .whatsapp-icon {
+            font-size: 30px;
+        }
+    
+        @media (max-width: 575px) {
+            .whatsapp-link {
+                bottom: 15px;
+                left: 15px;
+                padding: 10px;
+            }
+    
+            .whatsapp-icon {
+                font-size: 25px;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <!-- Navbar start -->
+    <div id="navbar-container" style="margin-top: -25px;"></div>
+    <!-- Navbar End -->
+
+    <!-- <a href="https://wa.me/9600399287" target="_blank" class="whatsapp-link">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a> -->
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumbs py-5">
+        <div class="container text-center py-5">
+            <h3 class="text-white display-3 mb-4">About Us</h3>
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-white">About Us</li>
+            </ol>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- About Start -->
+    <div class="container-fluid about py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <div class="video">
+                        <img src="img/about-1.jpg" class="img-fluid rounded" alt="Salon Interior">
+                        <div class="position-absolute rounded border-5 border-top border-start border-white"
+                            style="bottom: 0; right: 0;">
+                            <img src="img/about-2.jpg" class="img-fluid rounded" alt="Salon Team">
+                        </div>
+                        <button type="button" class="btn btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/your-video-id" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div>
+                        <p class="fs-4 text-uppercase text-primary">About Us</p>
+                        <h1 class="display-4 mb-4">Your Premier Beauty & Hair Salon</h1>
+                        <p class="mb-4">Welcome to our salon, where beauty meets excellence. We are dedicated to offering the highest quality hair and beauty services in a luxurious and relaxing environment. Our team of experienced professionals is passionate about helping you look and feel your best.</p>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-cut fa-3x text-primary"></i>
+                                    <div class="ms-4">
+                                        <h5 class="mb-2">Expert Hair Styling</h5>
+                                        <p class="mb-0">Our talented stylists are skilled in the latest hair trends and techniques, ensuring you receive a personalized and stylish look every time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-spa fa-3x text-primary"></i>
+                                    <div class="ms-4">
+                                        <h5 class="mb-2">Luxurious Spa Treatments</h5>
+                                        <p class="mb-0">Indulge in our premium spa services designed to rejuvenate and pamper you. From facials to massages, we offer a range of treatments for ultimate relaxation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="my-4">At our salon, we believe in providing exceptional service with a touch of elegance. Whether you're here for a haircut, color treatment, or a day of relaxation, we are committed to making your experience memorable.</p>
+                        <p class="mb-4">We use only the finest products and techniques to ensure you receive top-notch service. Our mission is to enhance your natural beauty and boost your confidence with every visit.</p>
+                    </div>
+                    <a href="service.html" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Discover Our Services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Modal Video -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer & Copyright End -->
+    <div id="footer-container"></div>
+    <!-- Footer & Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Sanjai Script -->
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+    
+    <!-- Script to set video source -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoModal = document.getElementById('videoModal');
+            videoModal.addEventListener('show.bs.modal', function (event) {
+                const button = event.relatedTarget;
+                const videoSrc = button.getAttribute('data-src');
+                const videoIframe = document.getElementById('video');
+                videoIframe.src = videoSrc;
+            });
+            videoModal.addEventListener('hide.bs.modal', function (event) {
+                const videoIframe = document.getElementById('video');
+                videoIframe.src = '';
+            });
+        });
+    </script>
+</body>
+
+</html>
